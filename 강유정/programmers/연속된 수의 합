@@ -1,0 +1,8 @@
+def solution(num, total):
+    answer = []
+    n = int((2*total - num + num**2)/(2 * num))
+    start = (n - num + 1)
+    end = n
+    for i in range(start, end+1):
+        answer.append(i)
+    return answer
